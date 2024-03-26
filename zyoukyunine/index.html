@@ -6,6 +6,20 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>ブルンスクイズ 上級編9</title>
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript">
+    <!--
+      var mylink = new Array(
+        "https://burunsu.github.io/kuizuzyoukyu/zyoukyueight",
+        "https://burunsu.github.io/kuizuzyoukyu/zyoukyuseven",
+        "https://burunsu.github.io/kuizuzyoukyu/zyoukyusix",
+        "https://burunsu.github.io/kuizuzyoukyu/zyoukyufive"
+      );
+      function random_jump() {
+        var i = Math.floor(Math.random() * mylink.length);
+        location.href = mylink[i];
+      }
+    // -->
+    </script>
 </head>
   <script>
     'use strict';
@@ -31,6 +45,6 @@ window.addEventListener('DOMContentLoaded' , function(){
    <a href=”不正解のリンク”><button type="button" class="btn">あらら</button></a>
    <a href="不正解のリンク"><button type="button" class="btn">岩盤かぁ</button></a>
    <a href=”不正解のリンク”><button type="button" class="btn">最悪だぁ</button></a>
-   <a href="正解のリンク"><button type="button" class="btn">鉄なかった</button></a>
+   <a href="javascript:random_jump();"><button type="button" class="btn">鉄なかった</button></a>
  </body>
 </html>
